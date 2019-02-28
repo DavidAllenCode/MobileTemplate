@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="MobileProject.Views.LoginPage">
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Label Text="Hi Welcome to the App!" />
+        <Entry Placeholder="Username" Text="{Binding Username}"/>
+        <Entry Placeholder="Password" Text="{Binding Password}"/>
+        <Button Text="Login" Command="{Binding LoginCommand}"/>
+    </StackLayout>
+</ContentPage>
